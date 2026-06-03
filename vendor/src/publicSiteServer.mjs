@@ -219,12 +219,12 @@ function renderRelatedTemplates(locale, theme) {
     ? [
       ['Контракт задачи', 'BVC-атом с Базисом, Вектором, Целью и проверками.', '/docs/bvc-spec'],
       ['Матрица проверок', 'Tier A/B/C readiness для работы агентов.', '/docs/verification-matrix'],
-      ['MCP-инструменты', 'Контракты tools для Cursor и Claude Code.', '/docs/mcp-tools'],
+      ['MCP-инструменты', 'Контракты tools для MCP-клиентов (Cursor, Claude Code, …).', '/docs/mcp-tools'],
     ]
     : [
       ['Work contract', 'BVC atom with Basis, Vector, Goal and checks.', '/docs/bvc-spec'],
       ['Verification matrix', 'Tier A/B/C readiness for agent work.', '/docs/verification-matrix'],
-      ['MCP tools', 'Tool contracts for Cursor and Claude Code.', '/docs/mcp-tools'],
+      ['MCP tools', 'Tool contracts for MCP clients (Cursor, Claude Code, …).', '/docs/mcp-tools'],
     ];
   return `<section class="related-templates">
     <div class="related-inner">
@@ -390,7 +390,7 @@ function renderInstallInstructions(locale) {
     <div>
       <p class="eyebrow">${escapeHtml(locale === 'ru' ? 'Установка' : 'Installation')}</p>
       <h2>${escapeHtml(locale === 'ru' ? 'Как установить Work Graph' : 'How to install Work Graph')}</h2>
-      <p>${escapeHtml(locale === 'ru' ? 'Быстрый путь — подключить Work Graph как MCP-сервер к Cursor или Claude Code. Данные остаются локально в git, сайт собирается в dist/public-site без базы данных.' : 'The fastest path is to connect Work Graph as an MCP server to Cursor or Claude Code. Data stays local in git, and the site exports to dist/public-site without a database.')}</p>
+      <p>${escapeHtml(locale === 'ru' ? 'Быстрый путь — подключить Work Graph как MCP-сервер к вашему агенту (Cursor, Claude Code или другой MCP-клиент). Данные остаются локально в git.' : 'The fastest path is to connect Work Graph as an MCP server to your agent IDE (Cursor, Claude Code, or another MCP client). Data stays local in git.')}</p>
     </div>
     <ol>${steps.map(([title, command]) => `<li>
       <strong>${escapeHtml(title)}</strong>

@@ -20,8 +20,8 @@ export {
 
 const CONFIG_SCHEMA_V1 = 'workgraph.project.config.v1';
 const CONFIG_SCHEMA_V2 = 'workgraph.project.config.v2';
-const DEFAULT_CLI_VERSION = '0.2.3';
-const DEFAULT_MCP_VERSION = '0.2.3';
+const DEFAULT_CLI_VERSION = '0.2.8';
+const DEFAULT_MCP_VERSION = '0.2.5';
 
 const INDEX_STUB = `#Index<[
 WorkItems:
@@ -322,12 +322,12 @@ export async function initWorkGraphProject(options = {}) {
       'npm install',
       'npm run workgraph:ui',
       'Открыть http://127.0.0.1:4177/',
-      'Перезагрузить MCP в Cursor (workgraph)',
+      'Перезагрузить MCP в IDE (сервер workgraph)',
     ]
     : [
       'npm run workgraph:ui',
       'Открыть http://127.0.0.1:4177/',
-      'Перезагрузить MCP в Cursor (workgraph)',
+      'Перезагрузить MCP в IDE (сервер workgraph)',
     ];
 
   return {

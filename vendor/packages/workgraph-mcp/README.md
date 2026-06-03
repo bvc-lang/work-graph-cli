@@ -2,9 +2,11 @@
 
 [MCP](https://modelcontextprotocol.io) server for Work Graph — list, create, and update work items in `intent/**/*.work.bvc`.
 
-## Cursor
+Works with any MCP-capable agent client (Cursor, Claude Desktop, Claude Code, and others).
 
-After `npx @work-graph/cli init .`, `.cursor/mcp.json` includes:
+## After `work-graph init`
+
+`npx @work-graph/cli init .` writes `.cursor/mcp.json` when you use Cursor. The entry looks like:
 
 ```json
 {
@@ -21,7 +23,7 @@ After `npx @work-graph/cli init .`, `.cursor/mcp.json` includes:
 }
 ```
 
-Reload MCP in Cursor after init.
+Reload MCP in your IDE after init. For Claude Desktop / Claude Code and other clients, use the same command and env — see [workgraph-mcp-clients.md](https://github.com/bvc-lang/work-graph/blob/main/docs/workgraph-mcp-clients.md) in the monorepo.
 
 ## Standalone
 

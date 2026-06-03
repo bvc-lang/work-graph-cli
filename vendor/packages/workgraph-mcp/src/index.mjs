@@ -340,10 +340,10 @@ server.tool(
 
 server.tool(
   'record_work_item_analysis',
-  'Write pre-execution feasibility analysis into WorkItem «Анализ» (стоит ли делать; not post-factum review). Text must come from Cursor LLM — server does not call models.',
+  'Write pre-execution feasibility analysis into WorkItem «Анализ» (стоит ли делать; not post-factum review). Text must come from the connected agent LLM — server does not call models.',
   {
     workId: z.string().describe('WorkItem id'),
-    analysis: z.string().describe('Full analysis text produced in Cursor'),
+    analysis: z.string().describe('Full analysis text produced by the connected agent'),
   },
   async (args) => jsonText(await recordWorkItemAnalysisFromMcp(args, rootOptions())),
 );
