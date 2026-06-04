@@ -1,6 +1,8 @@
 # work-graph/cli
 
-npm: [`@work-graph/cli`](https://www.npmjs.com/package/@work-graph/cli) v0.2.8
+npm: [`@work-graph/cli`](https://www.npmjs.com/package/@work-graph/cli) v0.2.10
+
+Website: [workgraph.ru/en](https://workgraph.ru/en/)
 
 Monorepo: [bvc-lang/work-graph](https://github.com/bvc-lang/work-graph)
 

@@ -4,6 +4,8 @@ Install **Work Graph** in any project via npm. No engine clone, no manual `engin
 
 Work Graph is a local, Git-friendly work system for AI-assisted development. It stores work items as BVC files, keeps project intent close to the codebase, and opens a local backlog UI for operators and agents.
 
+Website: [workgraph.ru/en](https://workgraph.ru/en/)
+
 Use it when you want:
 
 - a project-local backlog without SaaS lock-in;
@@ -20,7 +22,7 @@ npm install
 npm run workgraph:ui
 ```
 
-→ http://127.0.0.1:4177/
+→ http://localhost:4177/
 
 ## Screenshots
 
@@ -132,6 +134,7 @@ See [CONTRIBUTING.md](https://github.com/bvc-lang/work-graph/blob/main/CONTRIBUT
 
 ## Links
 
+- Website: https://workgraph.ru/en/
 - CLI mirror: https://github.com/bvc-lang/work-graph-cli
 - Work Graph monorepo: https://github.com/bvc-lang/work-graph
 - BVC spec: https://github.com/bvc-lang/spec

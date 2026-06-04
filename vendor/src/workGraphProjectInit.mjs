@@ -173,7 +173,7 @@ alwaysApply: true
 - Канон задач: \`intent/**/work/*.work.bvc\`, индекс \`intent/index.bvc\`.
 - Trackable work — только через \`work.id\`; не дублировать в чат-todo.
 - Перед закрытием задачи — \`Свидетельства:\` в atom и проверки из \`Проверки:\`.
-- UI: \`npm run workgraph:ui\` → http://127.0.0.1:4177/
+- UI: \`npm run workgraph:ui\` → http://localhost:4177/
 - MCP: сервер \`workgraph\` в \`.cursor/mcp.json\` (если настроен при init).
 
 Установка: \`npx @work-graph/cli init .\` или «установи Work Graph в этот проект».
@@ -321,12 +321,12 @@ export async function initWorkGraphProject(options = {}) {
     ? [
       'npm install',
       'npm run workgraph:ui',
-      'Открыть http://127.0.0.1:4177/',
+      'Открыть http://localhost:4177/',
       'Перезагрузить MCP в IDE (сервер workgraph)',
     ]
     : [
       'npm run workgraph:ui',
-      'Открыть http://127.0.0.1:4177/',
+      'Открыть http://localhost:4177/',
       'Перезагрузить MCP в IDE (сервер workgraph)',
     ];
 
