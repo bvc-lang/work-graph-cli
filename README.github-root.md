@@ -1,6 +1,6 @@
 # work-graph/cli
 
-npm: [`@work-graph/cli`](https://www.npmjs.com/package/@work-graph/cli) v0.2.19
+npm: [`@work-graph/cli`](https://www.npmjs.com/package/@work-graph/cli) v0.2.20
 
 Website: [workgraph.ru/en](https://workgraph.ru/en/)
 
